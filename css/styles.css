@@ -387,7 +387,7 @@ section h2 {
 
 .portfolio-info .btn {
     background: white;
-    color: var(--primary);
+    color: var (--primary);
     padding: 0.8rem 2rem;
     border-radius: 25px;
     text-decoration: none;
@@ -1834,6 +1834,24 @@ section h2 {
     border-color: var(--primary);
 }
 
+/* ...existing code... */
+
+.form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+}
+
+#nombreSitio {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.5px;
+}
+
+/* ...existing code... */
+
 .modal .btn {
     width: 100%;
     margin-top: 1rem;
@@ -1844,4 +1862,42 @@ section h2 {
         margin: 10% auto;
         padding: 1.5rem;
     }
+}
+
+.plan-details {
+    padding: 1rem 0;
+}
+
+.plan-details h4 {
+    color: var(--primary);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.1rem;
+}
+
+.plan-details h4:first-child {
+    margin-top: 0;
+}
+
+.plan-details ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.plan-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.plan-details li i {
+    color: var(--success);
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.plan-details li i.fa-exclamation-circle {
+    color: #dc3545;
 }

@@ -105,18 +105,17 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     
     const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
-    const telefono = document.getElementById('telefono').value;
     const plan = document.getElementById('plan').value;
+    const dominio = document.getElementById('dominio').value;
+    const nombreSitio = document.getElementById('nombreSitio').value;
     const mensaje = document.getElementById('mensaje').value;
     
     // Construir mensaje para WhatsApp
     const text = `¡Hola! Me interesa una cotización.%0A%0A` +
                 `Nombre: ${nombre}%0A` +
-                `Email: ${email}%0A` +
-                `Teléfono: ${telefono}%0A` +
-                `Plan: ${plan}%0A` +
-                `Mensaje: ${mensaje}`;
+                `Plan Seleccionado: ${plan}%0A` +
+                `Dominio Deseado: ${nombreSitio}${dominio}%0A` +
+                `${mensaje ? `Mensaje: ${mensaje}%0A` : ''}`;
     
     // Redirigir a WhatsApp
     window.location.href = `https://wa.me/56966083139?text=${text}`;
