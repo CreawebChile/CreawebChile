@@ -152,19 +152,19 @@ emailForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
     const nombre = document.getElementById('emailNombre').value;
-    const email = document.getElementById('emailCorreo').value;
-    const asunto = document.getElementById('emailAsunto').value;
     const plan = document.getElementById('emailPlan').value;
+    const dominio = document.getElementById('emailDominio').value;
+    const nombreSitio = document.getElementById('emailNombreSitio').value;
     const mensaje = document.getElementById('emailMensaje').value;
     
     // Construir el cuerpo del correo
     const mailtoLink = `mailto:chilecreaweb@gmail.com` +
-                      `?subject=${encodeURIComponent(asunto)}` +
+                      `?subject=${encodeURIComponent('Solicitud de Cotización Web')}` +
                       `&body=${encodeURIComponent(
                           `Nombre: ${nombre}\n` +
-                          `Email: ${email}\n` +
-                          `Plan de Interés: ${plan}\n\n` +
-                          `Mensaje:\n${mensaje}`
+                          `Plan Seleccionado: ${plan}\n` +
+                          `Dominio Deseado: ${nombreSitio}${dominio}\n` +
+                          `${mensaje ? `\nMensaje:\n${mensaje}` : ''}`
                       )}`;
     
     // Abrir el cliente de correo predeterminado
