@@ -1343,11 +1343,37 @@ section h2 {
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 0.75rem;
-    color: var(--text-light);
+    color: var (--text-light);
 }
 
 .payment-terms li i {
     color: var(--success);
+}
+
+/* ...existing code... */
+
+.payment-note {
+    background: #fff3cd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.payment-note ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.payment-note li {
+    color: #856404;
+    margin-bottom: 0.5rem;
+}
+
+.payment-warning {
+    color: #dc3545;
+    font-weight: 500;
+    margin-top: 1rem;
+    font-size: 0.95rem;
 }
 
 /* Active States */
@@ -1901,3 +1927,46 @@ section h2 {
 .plan-details li i.fa-exclamation-circle {
     color: #dc3545;
 }
+
+/* ...existing code... */
+
+.price-buttons {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.price-buttons .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.price-buttons .btn i {
+    margin-right: 0.5rem;
+}
+
+/* ...existing code... */
+
+.maintenance-subscribe-btn {
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+}
+
+.maintenance-subscribe-btn i {
+    margin-right: 0.5rem;
+}
+
+/* ...existing code... */
+
+.maintenance-subscribe-btn.featured {
+    background: white;
+    color: var(--primary);
+}
+
+.maintenance-subscribe-btn.featured:hover {
+    background: var(--background-alt);
+}
+
+/* ...existing code... */
