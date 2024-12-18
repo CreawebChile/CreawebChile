@@ -1376,6 +1376,33 @@ section h2 {
     font-size: 0.95rem;
 }
 
+/* ...existing code... */
+
+.price-tax-note {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.price-tax-note i {
+    margin-right: 0.5rem;
+    color: var(--primary);
+}
+
+.payment-tax-note {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(133, 100, 4, 0.2);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.payment-tax-note i {
+    margin-right: 0.5rem;
+}
+
 /* Active States */
 .faq-item.active .faq-question {
     background: var(--primary);
