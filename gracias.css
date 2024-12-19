@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-color: #2c3e50;
+    --background-color: #f5f6fa;
+    --card-background: rgba(255, 255, 255, 0.95);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,32 +14,41 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    color: var(--text-color);
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .thank-you-card {
-    background: white;
-    border-radius: 15px;
-    padding: 40px;
+    background: var(--card-background);
+    border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
+    padding: 3rem;
+    backdrop-filter: blur(10px);
 }
 
 h1 {
-    color: #2c3e50;
-    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    font-weight: 600;
 }
 
 .message {
@@ -38,32 +56,29 @@ h1 {
 }
 
 .message p {
-    margin-bottom: 15px;
-    color: #555;
+    font-size: 1.1rem;
     line-height: 1.6;
+    color: var(--text-color);
 }
 
 .important-message {
-    color: #e74c3c;
-    font-weight: bold;
-    padding: 10px;
-    border: 2px solid #e74c3c;
-    border-radius: 8px;
-    margin: 20px 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    font-weight: 500;
+    margin: 2rem 0;
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #3498db;
-    color: white;
+    display: block;
+    padding: 2rem;
+    border-radius: 15px;
     text-decoration: none;
-    border-radius: 25px;
+    color: white;
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #2980b9;
     transform: translateY(-2px);
 }
 
@@ -83,28 +98,29 @@ h1 {
 
 .social-links {
     display: flex;
+    gap: 1rem;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .social-btn {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    border-radius: 25px;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
     text-decoration: none;
     color: white;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .whatsapp {
-    background-color: #25D366;
+    background: #25D366;
 }
 
 .instagram {
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 .social-btn i {
@@ -115,9 +131,168 @@ h1 {
     margin-right: 8px;
 }
 
-@media (max-width: 480px) {
+.subscription-plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.subscription-plans .btn {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.btn-premium {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+}
+
+.btn-professional {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.btn-basic {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+.subscription-plans .btn h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.subscription-plans .btn p {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.subscription-plans .btn .period {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.subscription-plans .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    transition: 0.5s;
+}
+
+.subscription-plans .btn:hover::before {
+    transform: translateX(100%);
+}
+
+.website-type-selector {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.website-type-btn {
+    flex: 1;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.website-type-btn:hover {
+    background: linear-gradient(135deg, #eef2f7, #e3e9f0);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.website-type-btn.active {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .container {
+        padding: 1.5rem;
+    }
+
     .thank-you-card {
-        padding: 20px;
+        padding: 2rem;
+    }
+    
+    .subscription-plans .btn {
+        min-width: 220px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .thank-you-card {
+        padding: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin: 1.5rem 0;
+    }
+
+    .message p {
+        font-size: 1rem;
+    }
+
+    .important-message {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .website-type-selector {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .website-type-btn {
+        width: 100%;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .subscription-plans .btn {
+        min-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .btn h3 {
+        font-size: 1.2rem;
+    }
+
+    .btn p {
+        font-size: 1.4rem;
     }
 
     .social-links {
@@ -127,6 +302,174 @@ h1 {
     .social-btn {
         width: 100%;
         justify-content: center;
-        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .thank-you-card {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .message p {
+        font-size: 16px;
+    }
+
+    .important-message {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .subscription-plans .btn {
+        min-width: 100%;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .subscription-plans .btn h3 {
+        font-size: 1.1em;
+    }
+
+    .subscription-plans .btn p {
+        font-size: 1.2em;
+    }
+
+    .subscription-plans .btn .period {
+        font-size: 0.8em;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact-info h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .website-type-selector {
+        flex-direction: column;
+    }
+    
+    .website-type-btn {
+        width: 100%;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .thank-you-card {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .message p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 1rem;
+    }
+
+    .btn h3 {
+        font-size: 1.1rem;
+    }
+
+    .btn p {
+        font-size: 1.2rem;
+    }
+
+    .social-btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .thank-you-card {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .subscription-plans {
+        gap: 10px;
+    }
+
+    .subscription-plans .btn {
+        padding: 12px;
+    }
+
+    .subscription-plans .btn h3 {
+        font-size: 1em;
+    }
+
+    .subscription-plans .btn p {
+        font-size: 1.1em;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .subscription-plans {
+        gap: 2rem;
+    }
+
+    .subscription-plans .btn {
+        max-width: 350px;
+    }
+}
+
+/* Support for landscape orientation on mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .thank-you-card {
+        padding: 1rem;
+    }
+
+    .subscription-plans {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
     }
 }

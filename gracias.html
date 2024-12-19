@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Gracias por tu compra!</title>
+
+    <!-- Favicon básico -->
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Favicon para navegadores -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+
+    <!-- Favicon para dispositivos Apple -->
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+
+    <!-- Manifest para PWA -->
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Resto de los enlaces CSS -->
     <link rel="stylesheet" href="gracias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="container">
@@ -12,12 +31,38 @@
             <h1>¡Gracias por tu compra!</h1>
             <div class="message">
                 <p>Tu página web estará lista lo antes posible.</p>
-                <p class="important-message">Es obligatorio activar un plan de mantenimiento mensual para mantener tu sitio web funcionando.</p>
+                <p class="important-message">Es obligatorio activar un plan de mantenimiento mensual correspondiente a tu página web.</p>
             </div>
             <div class="subscription-reminder">
-                <a href="index.html#maintenance-simple" class="btn btn-primary">
-                    <i class="fas fa-sync-alt"></i> Ver Planes de Mantenimiento Mensual
-                </a>
+                <h2>Selecciona el tipo de página web que compraste:</h2>
+                <div class="website-type-selector">
+                    <button class="website-type-btn" data-plan="premium">Página Web Premium</button>
+                    <button class="website-type-btn" data-plan="professional">Página Web Profesional</button>
+                    <button class="website-type-btn" data-plan="basic">Página Web Básica</button>
+                </div>
+                <div class="subscription-plans">
+                    <div id="plan-premium" class="plan-option">
+                        <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808493d304230193d77b7a1b01fc" class="btn btn-premium">
+                            <h3>Mantenimiento Premium</h3>
+                            <p>$ 20.000 IVA incluido</p>
+                            <span class="period">Mensual</span>
+                        </a>
+                    </div>
+                    <div id="plan-professional" class="plan-option">
+                        <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808493d304230193d77ac2a701fa" class="btn btn-professional">
+                            <h3>Mantenimiento Profesional</h3>
+                            <p>$ 15.000 IVA incluido</p>
+                            <span class="period">Mensual</span>
+                        </a>
+                    </div>
+                    <div id="plan-basic" class="plan-option">
+                        <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808493b073170193d77779ea0cd2" class="btn btn-basic">
+                            <h3>Mantenimiento Básico</h3>
+                            <p>$ 10.000 IVA incluido</p>
+                            <span class="period">Mensual</span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="contact-info">
                 <h2>Contáctanos en:</h2>
@@ -25,14 +70,15 @@
                     <a href="https://wa.me/56966083139?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios!" target="_blank" class="social-btn whatsapp">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
-                    <a href="https://www.instagram.com/_creawebchile_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-btn instagram">
+                    <a href="https://www.instagram.com/_creawebchile_?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw==" target="_blank" class="social-btn instagram">
                         <i class="fab fa-instagram"></i> Instagram
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <div class="background-animation"></div>
+    <script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
     <script src="gracias.js"></script>
 </body>
 </html>

@@ -17,8 +17,74 @@
 <link rel="manifest" href="favicon/site.webmanifest">
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9 , maximum-scale=1.0">
-    <title>Crea Web Chile - Diseño Web Profesional</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- SEO Básico -->
+    <title>Crea Web Chile - Diseño y Desarrollo Web Profesional en Chile</title>
+    <meta name="description" content="Empresa líder en diseño web en Chile. Desarrollo de páginas web profesionales, landing pages y sitios corporativos desde $15.000. Agencia digital especializada en crear sitios web de alta calidad en Chile. Incluye hosting y soporte técnico.">
+    <meta name="keywords" content="diseño web Chile, desarrollo de páginas web en Chile, agencia de diseño web Chile, creación de sitios web en Chile, servicios de desarrollo web Chile, diseñadores de páginas web en Chile, empresas de diseño web en Chile, desarrollo de sitios web profesionales en Chile, agencia digital Chile, diseño y desarrollo web Chile, landing pages, páginas corporativas, diseño web económico">
+    <meta name="author" content="Crea Web Chile">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://creawebchile.cl/">
+
+    <!-- Schema.org actualizado -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebDesign",
+        "name": "Crea Web Chile",
+        "description": "Agencia de diseño y desarrollo web profesional en Chile. Especialistas en creación de sitios web, landing pages y diseño web corporativo.",
+        "url": "https://creawebchile.cl",
+        "logo": "https://creawebchile.cl/images/CreaWeb%20chile.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CL",
+            "addressRegion": "Región Metropolitana"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-33.4569400",
+            "longitude": "-70.6482700"
+        },
+        "priceRange": "$15.000 - $70.000",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+56966083139",
+            "contactType": "customer service",
+            "areaServed": "CL"
+        },
+        "sameAs": [
+            "https://www.instagram.com/_creawebchile_",
+            "https://wa.me/56966083139"
+        ],
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "-33.4569400",
+                "longitude": "-70.6482700"
+            },
+            "geoRadius": "1000"
+        }
+    }
+    </script>
+
+    <!-- Open Graph actualizado -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://creawebchile.cl/">
+    <meta property="og:title" content="Crea Web Chile - Diseño y Desarrollo Web Profesional en Chile">
+    <meta property="og:description" content="Agencia líder en diseño y desarrollo web en Chile. Creamos sitios web profesionales desde $15.000 con hosting incluido.">
+    <meta property="og:image" content="https://creawebchile.cl/images/CreaWeb%20chile.png">
+    <meta property="og:site_name" content="Crea Web Chile">
+    <meta property="og:locale" content="es_CL">
+
+    <!-- Twitter actualizado -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://creawebchile.cl/">
+    <meta name="twitter:title" content="Crea Web Chile - Diseño y Desarrollo Web Profesional en Chile">
+    <meta name="twitter:description" content="Agencia líder en diseño y desarrollo web en Chile. Creamos sitios web profesionales desde $15.000 con hosting incluido.">
+    <meta name="twitter:image" content="https://creawebchile.cl/images/CreaWeb%20chile.png">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -27,779 +93,700 @@
 </head>
 <body>
     <!-- Barra de navegación fija -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="images/CreaWeb chile.png" alt="Crea Web Chile" class="logo-img">
-                <span>Crea Web Chile</span>
-            </a>
-            
-            <div class="menu-btn">
-                <div class="menu-btn__burger"></div>
-            </div>
-
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#portafolio">Proyectos</a></li>
-                <li><a href="#precios">Precios</a></li>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li class="nav-cta">
-                    <a href="https://wa.me/56966083139?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios!
-                    " class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Cotizar
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Diseño Web Profesional</h1>
-                <p>Creamos sitios web que impulsan tu negocio al siguiente nivel</p>
-                <div class="hero-buttons">
-                    <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
-                    <a href="https://wa.me/56966083139?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios!
-                    " class="btn btn-whatsapp">
-                        <i class="fab fa-whatsapp"></i> Cotización Gratis
-                    </a>
-                </div>
-            </div>
-            <div class="hero-features">
-                <div class="feature-card">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Entrega Rápida</h3>
-                    <p>48 - 168 horas</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>100% Responsivo</h3>
-                    <p>Se adapta a todo dispositivo</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-lock"></i>
-                    <h3>Dominio Seguro</h3>
-                    <p>SSL incluido</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Servicios -->
-    <section id="servicios" class="services">
-        <div class="container">
-            <h2 class="section-title">Tipos de Páginas que Hacemos</h2>
-            <p class="section-subtitle">Soluciones web profesionales para cada necesidad</p>
-            
-            <div class="services-grid">
-                <!-- 1. Páginas Básicas Informativas -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-info-circle"></i>
-                    </div>
-                    <h3>Páginas Básicas Informativas</h3>
-                    <p class="service-desc">Perfectas para negocios y profesionales que necesitan una página sencilla para mostrar información importante.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Diseño claro y fácil de usar</li>
-                        <li><i class="fas fa-check"></i> Catálogos de productos</li>
-                        <li><i class="fas fa-check"></i> Listas de precios</li>
-                        <li><i class="fas fa-check"></i> Personalización básica</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
-                </div>
-
-                <!-- 2. Landing Pages -->
-                <div class="service-card featured">
-                    <div class="service-badge">Más Solicitado</div>
-                    <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3>Páginas de Promoción (Landing Pages)</h3>
-                    <p class="service-desc">Perfectas para promociones, campañas de publicidad o captar clientes.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Diseños atractivos</li>
-                        <li><i class="fas fa-check"></i> Botones WhatsApp</li>
-                        <li><i class="fas fa-check"></i> 100% Responsivas</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-primary">Solicitar Info</a>
-                </div>
-
-                <!-- 3. Páginas para Portafolios -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-images"></i>
-                    </div>
-                    <h3>Páginas para Portafolios</h3>
-                    <p class="service-desc">Perfectas para mostrar trabajos, proyectos o productos de manera profesional.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Galerías de imágenes</li>
-                        <li><i class="fas fa-check"></i> Sección de testimonios</li>
-                        <li><i class="fas fa-check"></i> Diseño atractivo</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
-                </div>
-
-                <!-- 4. Páginas de Servicios -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clipboard-list"></i>
-                    </div>
-                    <h3>Páginas de Servicios</h3>
-                    <p class="service-desc">Perfectas para explicar lo que ofreces de forma clara y directa.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Detalles de servicios</li>
-                        <li><i class="fas fa-check"></i> Notas claras</li>
-                        <li><i class="fas fa-check"></i> Diseño profesional</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
-                </div>
-
-                <!-- 5. Páginas con Precios -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tags"></i>
-                    </div>
-                    <h3>Páginas con Precios</h3>
-                    <p class="service-desc">Perfectas para mostrar de manera sencilla cuánto cuestan tus servicios.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Listas de precios claras</li>
-                        <li><i class="fas fa-check"></i> Comparación de planes</li>
-                        <li><i class="fas fa-check"></i> Información de costos</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
-                </div>
-
-                <!-- 6. Páginas de Contacto -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Páginas de Contacto</h3>
-                    <p class="service-desc">Perfectas para facilitar que tus clientes te encuentren y hablen contigo.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Formularios básicos</li>
-                        <li><i class="fas fa-check"></i> Botones WhatsApp</li>
-                        <li><i class="fas fa-check"></i> Datos de contacto</li>
-                    </ul>
-                    <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portafolio -->
-    <section id="portafolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Nuestros Trabajos</h2>
-            <p class="section-subtitle">Algunos de nuestros proyectos más recientes</p>
-            
-            <div class="portfolio-grid">
-                <!-- Todo Universidad -->
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="https://todouniversidad.xyz/assets/Todo_Universidad.png" alt="Todo Universidad">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Todo Universidad</h3>
-                                <p>Plataforma Educativa</p>
-                                <a href="https://todouniversidad.xyz" class="btn btn-outline" target="_blank">
-                                    Ver Sitio
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- TrustZone Store -->
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="https://trustzonestore.com/images/Logotipo%20Tecnolog%C3%ADa%20Azul%20(2).png" alt="TrustZone Store">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>TrustZone Store</h3>
-                                <p>Tienda de Tecnología</p>
-                                <a href="https://trustzonestore.com" class="btn btn-outline" target="_blank">
-                                    Ver Sitio
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Restaurante Demo -->
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="https://img.freepik.com/fotos-premium/fondo-restaurante-desenfoque-frente-mesa-madera_91957-31.jpg" alt="Restaurante Demo">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Restaurante Demo</h3>
-                                <p>Sitio Web Gastronómico</p>
-                                <a href="https://creawebchile.github.io/Restaurante/" class="btn btn-outline" target="_blank">
-                                    Ver Sitio
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gym Demo -->
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="https://images.alphacoders.com/692/thumb-1920-692037.jpg" alt="Gym Demo">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Gym Demo</h3>
-                                <p>Sitio Web Deportivo</p>
-                                <a href="https://creawebchile.github.io/gym/" class="btn btn-outline" target="_blank">
-                                    Ver Sitio
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Exxtra Pluss -->
-                <div class="portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="https://creawebchile.github.io/Exxtra-Pluss/images/logoexxtrapluss.png" alt="Exxtra Pluss">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Exxtra Pluss</h3>
-                                <p>Landing Page Corporativa (Prototipo)</p>
-                                <a href="https://creawebchile.github.io/Exxtra-Pluss/" class="btn btn-outline" target="_blank">
-                                    Ver Prototipo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Precios -->
-    <section id="precios" class="pricing">
-        <div class="container">
-            <h2 class="section-title">Planes y Precios</h2>
-            <p class="section-subtitle">Inversión única + mantenimiento mensual obligatorio</p>
-            <p class="price-tax-note"><i class="fas fa-info-circle"></i> Todos nuestros precios incluyen IVA</p>
-            
-            <div class="pricing-grid">
-                <!-- Plan Básico -->
-                <div class="price-card">
-                    <div class="price-header">
-                        <h3>Página Básica Profesional</h3>
-                        <div class="price">
-                            <span class="amount">Desde $15.000</span>
-                            <span class="currency">CLP</span>
-                        </div>
-                        <p class="price-subtitle">Pago único por desarrollo (IVA incluido)</p>
-                    </div>
-                    <ul class="price-features">
-                        <li><i class="fas fa-check"></i> Diseño profesional responsive</li>
-                        <li><i class="fas fa-check"></i> Logo tipo sencillo incluido</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Dominio NO incluido (pago anual aparte)</li>
-                        <li><i class="fas fa-check"></i> Información personalizada de tu negocio</li>
-                        <li><i class="fas fa-check"></i> Redes sociales integradas</li>
-                        <li><i class="fas fa-check"></i> Formulario de contacto</li>
-                        <li><i class="fas fa-check"></i> Galería de imágenes</li>
-                        <li><i class="fas fa-check"></i> Elementos personalizados según necesidad</li>
-                        <li><i class="fas fa-check"></i> Entrega 48-168 horas</li>
-                        <li class="feature-note"><i class="fas fa-info-circle"></i> El precio puede variar según requerimientos adicionales</li>
-                    </ul>
-                    <div class="maintenance-note">
-                        <p><i class="fas fa-exclamation-circle"></i> Mantenimiento mensual obligatorio de $10.000 CLP</p>
-                        <small>Incluye hosting, actualizaciones menores y soporte técnico</small>
-                    </div>
-                    <div class="price-buttons">
-                        <a href="https://mpago.la/1GoWmWK" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-credit-card"></i> Pagar Ahora
-                        </a>
-                        <a href="https://wa.me/TUNUMERO" class="btn btn-outline">Cotizar</a>
-                    </div>
-                </div>
-
-                <!-- Plan Estándar -->
-                <div class="price-card featured">
-                    <div class="price-badge">Más Solicitado</div>
-                    <div class="price-header">
-                        <h3>Página Profesional</h3>
-                        <div class="price">
-                            <span class="amount">Desde $35.000</span>
-                            <span class="currency">CLP</span>
-                        </div>
-                        <p class="price-subtitle">Pago único por desarrollo (IVA incluido)</p>
-                    </div>
-                    <ul class="price-features">
-                        <li><i class="fas fa-check"></i> Hasta 3 secciones personalizadas</li>
-                        <li><i class="fas fa-check"></i> Diseño personalizado según tu marca</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Dominio incluido (Sólo por 1 año)</li>
-                        <li><i class="fas fa-check"></i> Integración WhatsApp Business</li>
-                        <li><i class="fas fa-check"></i> Formulario de contacto funcional</li>
-                        <li><i class="fas fa-check"></i> Optimización SEO básica</li>
-                        <li><i class="fas fa-check"></i> Mapa interactivo Google Maps</li>
-                        <li><i class="fas fa-check"></i> Redes sociales enlazadas</li>
-                        <li><i class="fas fa-check"></i> Información de contacto clara</li>
-                        <li><i class="fas fa-check"></i> Galería de imágenes básica</li>
-                    </ul>
-                    <div class="maintenance-note">
-                        <p><i class="fas fa-exclamation-circle"></i> Mantenimiento mensual obligatorio de $15.000 CLP</p>
-                        <small>Incluye hosting, soporte técnico y actualizaciones menores de contenido</small>
-                    </div>
-                    <div class="price-buttons">
-                        <a href="https://mpago.la/2BvGrsz" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-credit-card"></i> Pagar Ahora
-                        </a>
-                        <a href="https://wa.me/TUNUMERO" class="btn btn-outline">Cotizar</a>
-                    </div>
-                </div>
-
-                <!-- Plan Premium -->
-                <div class="price-card">
-                    <div class="price-header">
-                        <h3>Página Premium</h3>
-                        <div class="price">
-                            <span class="amount">Desde $70.000</span>
-                            <span class="currency">CLP</span>
-                        </div>
-                        <p class="price-subtitle">Pago único por desarrollo (IVA incluido)</p>
-                    </div>
-                    <ul class="price-features">
-                       <li class="feature-section-title">✅ Incluye todo lo de la Página Básica y Profesional:</li>
-                        <li><i class="fas fa-check"></i> 5 o más secciones personalizadas</li>
-                        <li><i class="fas fa-check"></i> Diseño premium moderno</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Dominio incluido (Sólo por 1 año)</li>
-                        <li><i class="fas fa-check"></i> Integración WhatsApp Business</li>
-                        <li><i class="fas fa-check"></i> SEO completo</li>
-                        <li><i class="fas fa-check"></i> Mapa interactivo Google Maps</li>
-                        <li><i class="fas fa-check"></i> Redes sociales enlazadas</li>
-                        <li><i class="fas fa-check"></i> Formulario avanzado de contacto</li>
-                        <li><i class="fas fa-check"></i> Galería con efecto lightbox</li>
-                        
-                        <li class="feature-section-title">✅ Características Exclusivas Premium:</li>
-                        <li><i class="fas fa-check"></i> Sección de Testimonios/Reseñas</li>
-                        <li><i class="fas fa-check"></i> FAQ con efecto acordeón</li>
-                        <li><i class="fas fa-check"></i> Animaciones y transiciones modernas</li>
-                        <li><i class="fas fa-check"></i> Diseño responsive optimizado</li>
-                        <li><i class="fas fa-check"></i> Formularios personalizados</li>
-                    </ul>
-                    <div class="maintenance-note">
-                        <p><i class="fas fa-exclamation-circle"></i> Mantenimiento mensual obligatorio de $20.000 CLP</p>
-                        <small>Incluye hosting, soporte técnico, actualizaciones y monitoreo</small>
-                    </div>
-                    <div class="price-buttons">
-                        <a href="https://mpago.la/117MCfz" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-credit-card"></i> Pagar Ahora
-                        </a>
-                        <a href="https://wa.me/TUNUMERO" class="btn btn-outline">Cotizar</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mantenimiento Mensual Simplificado -->
-            <div class="maintenance-simple">
-                <div class="maintenance-header">
-                    <i class="fas fa-info-circle"></i>
-                    <h3>Planes de Mantenimiento Mensual</h3>
-                    <p>Servicios obligatorios para mantener tu sitio web activo</p>
-                </div>
+    <header role="banner">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#inicio" class="logo">
+                    <img src="images/CreaWeb chile.png" alt="Crea Web Chile" class="logo-img">
+                    <span>Crea Web Chile</span>
+                </a>
                 
-                <div class="maintenance-plans">
-                    <div class="plan">
-                        <h4>Plan Básico</h4>
-                        <div class="plan-price">$10.000 /mes</div>
-                        <p>Para sitios web básicos</p>
-                        <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808493b073170193d77779ea0cd2" 
-                           target="_blank" 
-                           class="btn btn-primary maintenance-subscribe-btn">
-                            <i class="fas fa-sync-alt"></i> Suscribir Mantenimiento
-                        </a>
-                    </div>
-                    <div class="plan featured">
-                        <span class="recommended">Recomendado</span>
-                        <h4>Plan Profesional</h4>
-                        <div class="plan-price">$15.000 /mes</div>
-                        <p>Para sitios web profesionales</p>
-                        <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808493d304230193d77ac2a701fa" 
-                           target="_blank" 
-                           class="btn btn-primary maintenance-subscribe-btn featured">
-                            <i class="fas fa-sync-alt"></i> Suscribir Mantenimiento
-                        </a>
-                    </div>
-                    <div class="plan">
-                        <h4>Plan Premium</h4>
-                        <div class="plan-price">$20.000 /mes</div>
-                        <p>Para sitios web avanzados</p>
-                        <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808493d304230193d77b7a1b01fc" 
-                           target="_blank" 
-                           class="btn btn-primary maintenance-subscribe-btn">
-                            <i class="fas fa-sync-alt"></i> Suscribir Mantenimiento
-                        </a>
-                    </div>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
                 </div>
 
-                <div class="maintenance-note">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <div>
-                        <strong>Importante:</strong>
-                        <p>El mantenimiento mensual es obligatorio e incluye hosting, certificado SSL por nuestro hosting "no dominio", respaldos, actualizaciones y soporte técnico. El pago debe realizarse dentro de los días acordados.</p>
-                        <p>En caso de no recibir los pagos correspondientes del mes, el sitio web será dado de baja al día siguiente sin previo aviso.</p>
-                    </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Preguntas Frecuentes</h2>
-                <p class="section-subtitle">Resolvemos tus dudas sobre nuestros servicios</p>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portafolio">Proyectos</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li class="nav-cta">
+                        <a href="https://wa.me/56966083139?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios!
+                        " class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </li>
+                </ul>
             </div>
+        </nav>
+    </header>
 
-            <div class="faq-container">
-                <div class="faq-intro">
-                    <div class="faq-intro-icon">
-                        <i class="fas fa-question-circle"></i>
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Diseño y Desarrollo Web Profesional en Chile</h1>
+                    <h2 class="hero-subtitle">Tu Socio Digital para Crecer en Línea</h2>
+                    <p>Agencia especializada en crear sitios web que impulsan tu negocio al siguiente nivel</p>
+                    <div class="hero-buttons">
+                        <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                        <a href="https://wa.me/56966083139?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios!
+                        " class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Cotización Gratis
+                        </a>
                     </div>
-                    <p>Encuentra respuestas a las preguntas más comunes sobre nuestros servicios de diseño web y mantenimiento.</p>
+                </div>
+                <div class="hero-features">
+                    <h2 class="visually-hidden">Nuestras Características Principales</h2>
+                    <div class="feature-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Entrega Rápida</h3>
+                        <p>48 - 168 horas</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>100% Responsivo</h3>
+                        <p>Se adapta a todo dispositivo</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lock"></i>
+                        <h3>Dominio Seguro</h3>
+                        <p>SSL incluido</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2 class="section-title">Servicios de Desarrollo Web Profesional</h2>
+                <h3 class="section-subtitle">Soluciones web profesionales para cada necesidad</h3>
+                
+                <div class="services-grid">
+                    <!-- 1. Páginas Básicas Informativas -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>Páginas Básicas Informativas</h3>
+                        <p class="service-desc">Perfectas para negocios y profesionales que necesitan una página sencilla para mostrar información importante.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Diseño claro y fácil de usar</li>
+                            <li><i class="fas fa-check"></i> Catálogos de productos</li>
+                            <li><i class="fas fa-check"></i> Listas de precios</li>
+                            <li><i class="fas fa-check"></i> Personalización básica</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
+                    </div>
+
+                    <!-- 2. Landing Pages -->
+                    <div class="service-card featured">
+                        <div class="service-badge">Más Solicitado</div>
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Páginas de Promoción (Landing Pages)</h3>
+                        <p class="service-desc">Perfectas para promociones, campañas de publicidad o captar clientes.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Diseños atractivos</li>
+                            <li><i class="fas fa-check"></i> Botones WhatsApp</li>
+                            <li><i class="fas fa-check"></i> 100% Responsivas</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary">Solicitar Info</a>
+                    </div>
+
+                    <!-- 3. Páginas para Portafolios -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h3>Páginas para Portafolios</h3>
+                        <p class="service-desc">Perfectas para mostrar trabajos, proyectos o productos de manera profesional.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Galerías de imágenes</li>
+                            <li><i class="fas fa-check"></i> Sección de testimonios</li>
+                            <li><i class="fas fa-check"></i> Diseño atractivo</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
+                    </div>
+
+                    <!-- 4. Páginas de Servicios -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h3>Páginas de Servicios</h3>
+                        <p class="service-desc">Perfectas para explicar lo que ofreces de forma clara y directa.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Detalles de servicios</li>
+                            <li><i class="fas fa-check"></i> Notas claras</li>
+                            <li><i class="fas fa-check"></i> Diseño profesional</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
+                    </div>
+
+                    <!-- 5. Páginas con Precios -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h3>Páginas con Precios</h3>
+                        <p class="service-desc">Perfectas para mostrar de manera sencilla cuánto cuestan tus servicios.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Listas de precios claras</li>
+                            <li><i class="fas fa-check"></i> Comparación de planes</li>
+                            <li><i class="fas fa-check"></i> Información de costos</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
+                    </div>
+
+                    <!-- 6. Páginas de Contacto -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Páginas de Contacto</h3>
+                        <p class="service-desc">Perfectas para facilitar que tus clientes te encuentren y hablen contigo.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Formularios básicos</li>
+                            <li><i class="fas fa-check"></i> Botones WhatsApp</li>
+                            <li><i class="fas fa-check"></i> Datos de contacto</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-outline">Solicitar Info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portafolio -->
+        <section id="portafolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portafolio de Proyectos Web</h2>
+                <h3 class="section-subtitle">Casos de éxito en desarrollo web</h3>
+                
+                <div class="portfolio-grid">
+                    <!-- Todo Universidad -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="https://todouniversidad.xyz/assets/Todo_Universidad.png" alt="Todo Universidad">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Todo Universidad</h3>
+                                    <p>Plataforma Educativa</p>
+                                    <a href="https://todouniversidad.xyz" class="btn btn-outline" target="_blank">
+                                        Ver Sitio
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TrustZone Store -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="https://trustzonestore.com/images/Logotipo%20Tecnolog%C3%ADa%20Azul%20(2).png" alt="TrustZone Store">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>TrustZone Store</h3>
+                                    <p>Tienda de Tecnología</p>
+                                    <a href="https://trustzonestore.com" class="btn btn-outline" target="_blank">
+                                        Ver Sitio
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Restaurante Demo -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="https://img.freepik.com/fotos-premium/fondo-restaurante-desenfoque-frente-mesa-madera_91957-31.jpg" alt="Restaurante Demo">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Restaurante Demo</h3>
+                                    <p>Sitio Web Gastronómico</p>
+                                    <a href="https://creawebchile.github.io/Restaurante/" class="btn btn-outline" target="_blank">
+                                        Ver Sitio
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gym Demo -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="https://images.alphacoders.com/692/thumb-1920-692037.jpg" alt="Gym Demo">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Gym Demo</h3>
+                                    <p>Sitio Web Deportivo</p>
+                                    <a href="https://creawebchile.github.io/gym/" class="btn btn-outline" target="_blank">
+                                        Ver Sitio
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exxtra Pluss -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="https://creawebchile.github.io/Exxtra-Pluss/images/logoexxtrapluss.png" alt="Exxtra Pluss">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Exxtra Pluss</h3>
+                                    <p>Landing Page Corporativa (Prototipo)</p>
+                                    <a href="https://creawebchile.github.io/Exxtra-Pluss/" class="btn btn-outline" target="_blank">
+                                        Ver Prototipo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precios -->
+        <section id="precios" class="pricing">
+            <div class="container">
+                <h2 class="section-title">Planes de Diseño Web Profesional</h2>
+                <h3 class="section-subtitle">Inversión única + mantenimiento mensual</h3>
+                <p class="price-tax-note"><i class="fas fa-info-circle"></i> Todos nuestros precios incluyen IVA</p>
+                
+                <div class="pricing-grid">
+                    <!-- Plan Básico -->
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>Página Básica Profesional</h3>
+                            <div class="price">
+                                <span class="amount">Desde $15.000</span>
+                                <span class="currency">CLP</span>
+                            </div>
+                            <p class="price-subtitle">Pago único por desarrollo (IVA incluido)</p>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Diseño profesional responsive</li>
+                            <li><i class="fas fa-check"></i> Logo tipo sencillo incluido</li>
+                            <li><i class="fas fa-exclamation-circle"></i> Dominio NO incluido (pago anual aparte)</li>
+                            <li><i class="fas fa-check"></i> Información personalizada de tu negocio</li>
+                            <li><i class="fas fa-check"></i> Redes sociales integradas</li>
+                            <li><i class="fas fa-check"></i> Formulario de contacto</li>
+                            <li><i class="fas fa-check"></i> Galería de imágenes</li>
+                            <li><i class="fas fa-check"></i> Elementos personalizados según necesidad</li>
+                            <li><i class="fas fa-check"></i> Entrega 48-168 horas</li>
+                            <li class="feature-note"><i class="fas fa-info-circle"></i> El precio puede variar según requerimientos adicionales</li>
+                        </ul>
+                        <div class="maintenance-note">
+                            <p><i class="fas fa-exclamation-circle"></i> Mantenimiento mensual obligatorio de $10.000 CLP</p>
+                            <small>Incluye hosting, actualizaciones menores y soporte técnico</small>
+                        </div>
+                        <div class="price-buttons">
+                            <a href="https://mpago.la/1GoWmWK" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-credit-card"></i> Pagar Ahora
+                            </a>
+                            <a href="#" class="btn btn-outline">Cotizar</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan Estándar -->
+                    <div class="price-card featured">
+                        <div class="price-badge">Más Solicitado</div>
+                        <div class="price-header">
+                            <h3>Página Profesional</h3>
+                            <div class="price">
+                                <span class="amount">Desde $35.000</span>
+                                <span class="currency">CLP</span>
+                            </div>
+                            <p class="price-subtitle">Pago único por desarrollo (IVA incluido)</p>
+                        </div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Hasta 3 secciones personalizadas</li>
+                            <li><i class="fas fa-check"></i> Diseño personalizado según tu marca</li>
+                            <li><i class="fas fa-exclamation-circle"></i> Dominio incluido (Sólo por 1 año)</li>
+                            <li><i class="fas fa-check"></i> Integración WhatsApp Business</li>
+                            <li><i class="fas fa-check"></i> Formulario de contacto funcional</li>
+                            <li><i class="fas fa-check"></i> Optimización SEO básica</li>
+                            <li><i class="fas fa-check"></i> Mapa interactivo Google Maps</li>
+                            <li><i class="fas fa-check"></i> Redes sociales enlazadas</li>
+                            <li><i class="fas fa-check"></i> Información de contacto clara</li>
+                            <li><i class="fas fa-check"></i> Galería de imágenes básica</li>
+                        </ul>
+                        <div class="maintenance-note">
+                            <p><i class="fas fa-exclamation-circle"></i> Mantenimiento mensual obligatorio de $15.000 CLP</p>
+                            <small>Incluye hosting, soporte técnico y actualizaciones menores de contenido</small>
+                        </div>
+                        <div class="price-buttons">
+                            <a href="https://mpago.la/2BvGrsz" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-credit-card"></i> Pagar Ahora
+                            </a>
+                            <a href="#" class="btn btn-outline">Cotizar</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan Premium -->
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>Página Premium</h3>
+                            <div class="price">
+                                <span class="amount">Desde $70.000</span>
+                                <span class="currency">CLP</span>
+                            </div>
+                            <p class="price-subtitle">Pago único por desarrollo (IVA incluido)</p>
+                        </div>
+                        <ul class="price-features">
+                           <li class="feature-section-title">✅ Incluye todo lo de la Página Básica y Profesional:</li>
+                            <li><i class="fas fa-check"></i> 5 o más secciones personalizadas</li>
+                            <li><i class="fas fa-check"></i> Diseño premium moderno</li>
+                            <li><i class="fas fa-exclamation-circle"></i> Dominio incluido (Sólo por 1 año)</li>
+                            <li><i class="fas fa-check"></i> Integración WhatsApp Business</li>
+                            <li><i class="fas fa-check"></i> SEO completo</li>
+                            <li><i class="fas fa-check"></i> Mapa interactivo Google Maps</li>
+                            <li><i class="fas fa-check"></i> Redes sociales enlazadas</li>
+                            <li><i class="fas fa-check"></i> Formulario avanzado de contacto</li>
+                            <li><i class="fas fa-check"></i> Galería con efecto lightbox</li>
+                            
+                            <li class="feature-section-title">✅ Características Exclusivas Premium:</li>
+                            <li><i class="fas fa-check"></i> Sección de Testimonios/Reseñas</li>
+                            <li><i class="fas fa-check"></i> FAQ con efecto acordeón</li>
+                            <li><i class="fas fa-check"></i> Animaciones y transiciones modernas</li>
+                            <li><i class="fas fa-check"></i> Diseño responsive optimizado</li>
+                            <li><i class="fas fa-check"></i> Formularios personalizados</li>
+                        </ul>
+                        <div class="maintenance-note">
+                            <p><i class="fas fa-exclamation-circle"></i> Mantenimiento mensual obligatorio de $20.000 CLP</p>
+                            <small>Incluye hosting, soporte técnico, actualizaciones y monitoreo</small>
+                        </div>
+                        <div class="price-buttons">
+                            <a href="https://mpago.la/117MCfz" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-credit-card"></i> Pagar Ahora
+                            </a>
+                            <a href="#" class="btn btn-outline">Cotizar</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="faq-grid">
-                    <!-- Dominios -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <div class="question-content">
-                                <i class="fas fa-globe"></i>
-                                <h3>¿Cómo funciona el tema de los dominios?</h3>
-                            </div>
-                            <i class="fas fa-chevron-down arrow"></i>
+                <!-- Mantenimiento Mensual Simplificado -->
+                <div class="maintenance-simple">
+                    <div class="maintenance-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Planes de Mantenimiento Web</h3>
+                        <h3 class="section-subtitle">Servicios esenciales para tu sitio web</h3>
+                    </div>
+                    
+                    <div class="maintenance-plans">
+                        <div class="plan">
+                            <h4>Plan Básico</h4>
+                            <div class="plan-price">$10.000</div>
+                            <p>Para sitios web básicos</p>
+                            <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808493b073170193d77779ea0cd2" 
+                               target="_blank" 
+                               class="btn btn-primary maintenance-subscribe-btn">
+                                <i class="fas fa-sync-alt"></i> Suscribir Mantenimiento
+                            </a>
                         </div>
-                        <div class="faq-answer">
-                            <div class="faq-details">
-                                <p><strong>Sobre el Dominio por plan:</strong></p>
-                                <div class="plan-details">
-                                    <h4>Plan básico:</h4>
-                                    <ul>
-                                        <li><i class="fas fa-check"></i> El dominio se paga por separado del desarrollo inicial</li>
-                                        <li><i class="fas fa-check"></i> El costo anual depende de la disponibilidad y tipo de dominio (.cl, .com, etc.)</li>
-                                        <li><i class="fas fa-check"></i> Se requiere renovación anual obligatoria</li>
-                                        <li><i class="fas fa-exclamation-circle"></i> La no renovación resultará en la pérdida del dominio y la baja del sitio</li>
-                                    </ul>
+                        
+                        <div class="plan featured">
+                            <span class="recommended">Recomendado</span>
+                            <h4>Plan Profesional</h4>
+                            <div class="plan-price">$15.000</div>
+                            <p>Para sitios web profesionales</p>
+                            <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808493d304230193d77ac2a701fa" 
+                               target="_blank" 
+                               class="btn btn-primary maintenance-subscribe-btn">
+                                <i class="fas fa-sync-alt"></i> Suscribir Mantenimiento
+                            </a>
+                        </div>
+                        
+                        <div class="plan">
+                            <h4>Plan Premium</h4>
+                            <div class="plan-price">$20.000</div>
+                            <p>Para sitios web avanzados</p>
+                            <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808493d304230193d77b7a1b01fc" 
+                               target="_blank" 
+                               class="btn btn-primary maintenance-subscribe-btn">
+                                <i class="fas fa-sync-alt"></i> Suscribir Mantenimiento
+                            </a>
+                        </div>
+                    </div>
 
-                                    <h4>Plan profesional y premium:</h4>
-                                    <ul>
-                                        <li><i class="fas fa-check"></i> Incluye dominio gratis sólo por 1 año</li>
-                                        <li><i class="fas fa-check"></i> Luego del año el dominio se paga por separado como se indica en el plan Básico</li>
-                                    </ul>
+                    <div class="maintenance-note">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div>
+                            <p><strong>Importante:</strong> El mantenimiento mensual es obligatorio e incluye hosting, certificado SSL, respaldos, actualizaciones y soporte técnico. El pago debe realizarse dentro de los días acordados.</p>
+                            <p>En caso de no recibir los pagos correspondientes del mes, el sitio web será dado de baja al día siguiente sin previo aviso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                                    <h4>Membresía Anual por uso de dominio:</h4>
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Preguntas Frecuentes</h2>
+                    <h3 class="section-subtitle">Todo lo que necesitas saber sobre nuestros servicios</h3>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-intro">
+                        <div class="faq-intro-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <p>Encuentra respuestas a las preguntas más comunes sobre nuestros servicios de diseño web y mantenimiento.</p>
+                    </div>
+
+                    <div class="faq-grid">
+                        <!-- Dominios -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <div class="question-content">
+                                    <i class="fas fa-globe"></i>
+                                    <h3>¿Cómo funciona el tema de los dominios?</h3>
+                                </div>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="faq-details">
+                                    <p><strong>Sobre el Dominio por plan:</strong></p>
+                                    <div class="plan-details">
+                                        <h4>Plan básico:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> El dominio se paga por separado del desarrollo inicial</li>
+                                            <li><i class="fas fa-check"></i> El costo anual depende de la disponibilidad y tipo de dominio (.cl, .com, etc.)</li>
+                                            <li><i class="fas fa-check"></i> Se requiere renovación anual obligatoria</li>
+                                            <li><i class="fas fa-exclamation-circle"></i> La no renovación resultará en la pérdida del dominio y la baja del sitio</li>
+                                        </ul>
+
+                                        <h4>Plan profesional y premium:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Incluye dominio gratis sólo por 1 año</li>
+                                            <li><i class="fas fa-check"></i> Luego del año el dominio se paga por separado como se indica en el plan Básico</li>
+                                        </ul>
+
+                                        <h4>Membresía Anual por uso de dominio:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Obligatoria para mantener registrado su dominio</li>
+                                            <li><i class="fas fa-check"></i> Sitio web activo y en línea por su dominio</li>
+                                            <li><i class="fas fa-times" style="color: red;"></i> La membresía anual cubre únicamente el registro de su dominio. No incluye actualizaciones ni servicios de hosting para el sitio web. Esta membresía garantiza que su URL sea única en el mundo y esté activa para facilitar su búsqueda y visibilidad en línea.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="faq-note">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <p>En caso de no renovar su dominio anual, el sitio web será dado de baja debido a la pérdida del dominio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SEO -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <div class="question-content">
+                                    <i class="fas fa-search"></i>
+                                    <h3>¿Qué es el SEO y por qué es importante?</h3>
+                                </div>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>El SEO (Search Engine Optimization) es el conjunto de técnicas que utilizamos para que tu sitio web aparezca en los primeros resultados de Google cuando las personas buscan servicios como los tuyos.</p>
+                                <div class="faq-details">
+                                    <h4>El SEO incluye:</h4>
                                     <ul>
-                                        <li><i class="fas fa-check"></i> Obligatoria para mantener registrado su dominio</li>
-                                        <li><i class="fas fa-check"></i> Sitio web activo y en línea por su dominio</li>
-                                        <li><i class="fas fa-times" style="color: red;"></i> La membresía anual cubre únicamente el registro de su dominio. No incluye actualizaciones ni servicios de hosting para el sitio web. Esta membresía garantiza que su URL sea única en el mundo y esté activa para facilitar su búsqueda y visibilidad en línea.</li>
+                                        <li><i class="fas fa-check"></i> Optimización de palabras clave relevantes para tu negocio</li>
+                                        <li><i class="fas fa-check"></i> Mejora de la velocidad de carga del sitio</li>
+                                        <li><i class="fas fa-check"></i> Estructura web optimizada para buscadores</li>
+                                        <li><i class="fas fa-check"></i> Contenido de calidad y relevante</li>
+                                        <li><i class="fas fa-check"></i> Optimización para dispositivos móviles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mantenimiento Mensual -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <div class="question-content">
+                                    <i class="fas fa-sync-alt"></i>
+                                    <h3>¿Cómo funciona el pago mensual de mantenimiento?</h3>
+                                </div>
+                                <i class="fas fa-chevron-down arrow"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>El mantenimiento mensual abarca desde $10.000 a $20.000 CLP (dependiendo del plan) es obligatorio y garantiza que tu sitio web permanezca activo y funcionando correctamente.</p>
+                                <div class="faq-details">
+                                    <h4>El mantenimiento incluye:</h4>
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Hosting profesional en servidores de alta velocidad</li>
+                                        <li><i class="fas fa-check"></i> Actualizaciones</li>
+                                        <li><i class="fas fa-check"></i> Certificado de seguridad SSL "https"</li>
+                                        <li><i class="fas fa-check"></i> Copias de seguridad diarias</li>
+                                        <li><i class="fas fa-check"></i> Soporte técnico</li>
                                     </ul>
                                 </div>
                                 <div class="faq-note">
                                     <i class="fas fa-exclamation-circle"></i>
-                                    <p>En caso de no renovar su dominio anual, el sitio web será dado de baja debido a la pérdida del dominio.</p>
+                                    <p>Sin el pago del mantenimiento mensual, el sitio web será dado de baja ya que no podremos mantener activos los servicios necesarios.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- SEO -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <div class="question-content">
-                                <i class="fas fa-search"></i>
-                                <h3>¿Qué es el SEO y por qué es importante?</h3>
-                            </div>
-                            <i class="fas fa-chevron-down arrow"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>El SEO (Search Engine Optimization) es el conjunto de técnicas que utilizamos para que tu sitio web aparezca en los primeros resultados de Google cuando las personas buscan servicios como los tuyos.</p>
-                            <div class="faq-details">
-                                <h4>El SEO incluye:</h4>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Optimización de palabras clave relevantes para tu negocio</li>
-                                    <li><i class="fas fa-check"></i> Mejora de la velocidad de carga del sitio</li>
-                                    <li><i class="fas fa-check"></i> Estructura web optimizada para buscadores</li>
-                                    <li><i class="fas fa-check"></i> Contenido de calidad y relevante</li>
-                                    <li><i class="fas fa-check"></i> Optimización para dispositivos móviles</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Mantenimiento Mensual -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <div class="question-content">
-                                <i class="fas fa-sync-alt"></i>
-                                <h3>¿Cómo funciona el pago mensual de mantenimiento?</h3>
+                        <!-- Proceso de Desarrollo -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <div class="question-content">
+                                    <i class="fas fa-code"></i>
+                                    <h3>¿Cómo es el proceso de desarrollo?</h3>
+                                </div>
+                                <i class="fas fa-chevron-down arrow"></i>
                             </div>
-                            <i class="fas fa-chevron-down arrow"></i>
+                            <div class="faq-answer">
+                                <p>Nuestro proceso de desarrollo es eficiente y organizado para asegurar los mejores resultados:</p>
+                                <div class="faq-details process-steps">
+                                    <div class="step">
+                                        <div class="step-number">1</div>
+                                        <p>Reunión inicial para entender tus necesidades</p>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">2</div>
+                                        <p>Propuesta de diseño y estructura</p>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">3</div>
+                                        <p>Desarrollo del sitio (48-168 horas)</p>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">4</div>
+                                        <p>Revisión y ajustes</p>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">5</div>
+                                        <p>Publicación y configuración final</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="faq-answer">
-                            <p>El mantenimiento mensual abarca desde $10.000 a $20.000 CLP (dependiendo del plan) es obligatorio y garantiza que tu sitio web permanezca activo y funcionando correctamente.</p>
-                            <div class="faq-details">
-                                <h4>El mantenimiento incluye:</h4>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Hosting profesional en servidores de alta velocidad</li>
-                                    <li><i class="fas fa-check"></i> Actualizaciones</li>
-                                    <li><i class="fas fa-check"></i> Certificado de seguridad SSL "https"</li>
-                                    <li><i class="fas fa-check"></i> Copias de seguridad diarias</li>
-                                    <li><i class="fas fa-check"></i> Soporte técnico</li>
-                                </ul>
-                            </div>
-                            <div class="faq-note">
-                                <i class="fas fa-exclamation-circle"></i>
-                                <p>Sin el pago del mantenimiento mensual, el sitio web será dado de baja ya que no podremos mantener activos los servicios necesarios.</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Proceso de Desarrollo -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <div class="question-content">
-                                <i class="fas fa-code"></i>
-                                <h3>¿Cómo es el proceso de desarrollo?</h3>
+                        <!-- Tecnologías -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <div class="question-content">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <h3>¿Qué tecnologías utilizan?</h3>
+                                </div>
+                                <i class="fas fa-chevron-down arrow"></i>
                             </div>
-                            <i class="fas fa-chevron-down arrow"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Nuestro proceso de desarrollo es eficiente y organizado para asegurar los mejores resultados:</p>
-                            <div class="faq-details process-steps">
-                                <div class="step">
-                                    <div class="step-number">1</div>
-                                    <p>Reunión inicial para entender tus necesidades</p>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">2</div>
-                                    <p>Propuesta de diseño y estructura</p>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">3</div>
-                                    <p>Desarrollo del sitio (48-168 horas)</p>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">4</div>
-                                    <p>Revisión y ajustes</p>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">5</div>
-                                    <p>Publicación y configuración final</p>
+                            <div class="faq-answer">
+                                <p>Utilizamos tecnologías modernas y probadas para garantizar el mejor rendimiento:</p>
+                                <div class="faq-details tech-grid">
+                                    <div class="tech-item">
+                                        <i class="fab fa-html5"></i>
+                                        <p>HTML5</p>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fab fa-css3-alt"></i>
+                                        <p>CSS3</p>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fab fa-js"></i>
+                                        <p>JavaScript</p>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <p>Responsive</p>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fab fa-github"></i>
+                                        <p>GitHub</p>
+                                    </div>
+                                    <div class="tech-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <p>SSL Security</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Tecnologías -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <div class="question-content">
-                                <i class="fas fa-laptop-code"></i>
-                                <h3>¿Qué tecnologías utilizan?</h3>
+                        <!-- Métodos de Pago -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <div class="question-content">
+                                    <i class="fas fa-credit-card"></i>
+                                    <h3>¿Cómo funciona el proceso de pago?</h3>
+                                </div>
+                                <i class="fas fa-chevron-down arrow"></i>
                             </div>
-                            <i class="fas fa-chevron-down arrow"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Utilizamos tecnologías modernas y probadas para garantizar el mejor rendimiento:</p>
-                            <div class="faq-details tech-grid">
-                                <div class="tech-item">
-                                    <i class="fab fa-html5"></i>
-                                    <p>HTML5</p>
-                                </div>
-                                <div class="tech-item">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <p>CSS3</p>
-                                </div>
-                                <div class="tech-item">
-                                    <i class="fab fa-js"></i>
-                                    <p>JavaScript</p>
-                                </div>
-                                <div class="tech-item">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <p>Responsive</p>
-                                </div>
-                                <div class="tech-item">
-                                    <i class="fab fa-github"></i>
-                                    <p>GitHub</p>
-                                </div>
-                                <div class="tech-item">
-                                    <i class="fas fa-shield-alt"></i>
-                                    <p>SSL Security</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Métodos de Pago -->
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <div class="question-content">
-                                <i class="fas fa-credit-card"></i>
-                                <h3>¿Cómo funciona el proceso de pago?</h3>
-                            </div>
-                            <i class="fas fa-chevron-down arrow"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <div class="payment-info">
-                                <div class="payment-methods">
-                                    <h4>Método de pago:</h4>
-                                    <div class="payment-grid">
-                                        <div class="payment-item">
-                                            <i class="fas fa-credit-card"></i>
-                                            <p>Mercado Pago</p>
-                                            <small>Acepta tarjetas de crédito, débito y otros medios de pago</small>
+                            <div class="faq-answer">
+                                <div class="payment-info">
+                                    <div class="payment-methods">
+                                        <h4>Método de pago:</h4>
+                                        <div class="payment-grid">
+                                            <div class="payment-item">
+                                                <i class="fas fa-credit-card"></i>
+                                                <p>Mercado Pago</p>
+                                                <small>Acepta tarjetas de crédito, débito y otros medios de pago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment-terms">
+                                        <h4>Proceso de pago requerido:</h4>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> 1. Pago único por desarrollo del sitio web</li>
+                                            <li><i class="fas fa-check"></i> 2. Suscripción mensual obligatoria para mantenimiento</li>
+                                        </ul>
+                                        <div class="payment-note">
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <p>Ambos pagos deben realizarse al momento de la contratación:</p>
+                                            <ul>
+                                                <li>- El pago por desarrollo según el plan elegido</li>
+                                                <li>- La suscripción mensual correspondiente al plan</li>
+                                                <li>- Para el plan básico, el dominio se paga por separado</li>
+                                            </ul>
+                                            <p class="payment-warning">Sin estos pagos no se podrá iniciar el desarrollo ni mantener activo el sitio web.</p>
+                                            <p class="payment-tax-note"><i class="fas fa-info-circle"></i> Todos nuestros precios incluyen IVA</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="payment-terms">
-                                    <h4>Proceso de pago requerido:</h4>
-                                    <ul>
-                                        <li><i class="fas fa-check"></i> 1. Pago único por desarrollo del sitio web</li>
-                                        <li><i class="fas fa-check"></i> 2. Suscripción mensual obligatoria para mantenimiento</li>
-                                    </ul>
-                                    <div class="payment-note">
-                                        <i class="fas fa-exclamation-circle"></i>
-                                        <p>Ambos pagos deben realizarse al momento de la contratación:</p>
-                                        <ul>
-                                            <li>- El pago por desarrollo según el plan elegido</li>
-                                            <li>- La suscripción mensual correspondiente al plan</li>
-                                            <li>- Para el plan básico, el dominio se paga por separado</li>
-                                        </ul>
-                                        <p class="payment-warning">Sin estos pagos no se podrá iniciar el desarrollo ni mantener activo el sitio web.</p>
-                                        <p class="payment-tax-note"><i class="fas fa-info-circle"></i> Todos nuestros precios incluyen IVA</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>¿Listo para Comenzar?</h2>
-            <div class="contact-buttons">
-                <a href="https://wa.me/56966083139?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios!
-                " class="btn btn-whatsapp btn-lg">
-                    <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
-                </a>
-                <a href="mailto:chilecreaweb@gmail.com" class="btn btn-outline btn-lg">
-                    <i class="fas fa-envelope"></i> Enviar Email
-                </a>
+        <!-- Contacto -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contacta con Nosotros</h2>
+                <h3 class="section-subtitle">Estamos aquí para ayudarte</h3>
+                <div class="contact-buttons"></div>
+                    <a href="https://wa.me/56966083139?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios!
+                    " class="btn btn-whatsapp btn-lg">
+                        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                    </a>
+                    <a href="mailto:chilecreaweb@gmail.com" class="btn btn-outline btn-lg">
+                        <i class="fas fa-envelope"></i> Enviar Email
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Modal de Cotización -->
-    <div id="cotizacionModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Solicitar Cotización</h2>
-            <form id="cotizacionForm">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="plan">Plan Seleccionado:</label>
-                    <select id="plan" name="plan" required>
-                        <option value="basico">Plan Básico - $15.000 (IVA incluido)</option>
-                        <option value="profesional">Plan Profesional - $35.000 (IVA incluido)</option>
-                        <option value="premium">Plan Premium - $70.000 (IVA incluido)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="dominio">Tipo de Dominio:</label>
-                    <select id="dominio" name="dominio" required>
-                        <option value=".com">.com - Comercial Internacional</option>
-                        <option value=".cl">.cl - Chile</option>
-                        <option value=".xyz">.xyz - General</option>
-                        <option value=".blog">.blog - Blog Personal/Profesional</option>
-                        <option value=".org">.org - Organizaciones</option>
-                        <option value=".net">.net - Tecnología/Network</option>
-                        <option value=".info">.info - Información</option>
-                        <option value=".store">.store - Tienda Online</option>
-                        <option value=".pro">.pro - Profesionales</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="nombreSitio">Nombre para su Sitio Web:</label>
-                    <input type="text" id="nombreSitio" name="nombreSitio" placeholder="Ej: mitienda, miempresa, etc" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje (Opcional):</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Agregue detalles adicionales si lo desea"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar Cotización</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Modal de Email -->
-    <div id="emailModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Enviar Email</h2>
-            <form id="emailForm">
-                <div class="form-group">
-                    <label for="emailNombre">Nombre:</label>
-                    <input type="text" id="emailNombre" name="emailNombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="emailPlan">Plan Seleccionado:</label>
-                    <select id="emailPlan" name="emailPlan" required>
-                        <option value="basico">Plan Básico - $15.000 (IVA incluido)</option>
-                        <option value="profesional">Plan Profesional - $35.000 (IVA incluido)</option>
-                        <option value="premium">Plan Premium - $70.000 (IVA incluido)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="emailDominio">Tipo de Dominio:</label>
-                    <select id="emailDominio" name="emailDominio" required>
-                        <option value=".com">.com - Comercial Internacional</option>
-                        <option value=".cl">.cl - Chile</option>
-                        <option value=".xyz">.xyz - General</option>
-                        <option value=".blog">.blog - Blog Personal/Profesional</option>
-                        <option value=".org">.org - Organizaciones</option>
-                        <option value=".net">.net - Tecnología/Network</option>
-                        <option value=".info">.info - Información</option>
-                        <option value=".store">.store - Tienda Online</option>
-                        <option value=".pro">.pro - Profesionales</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="emailNombreSitio">Nombre para su Sitio Web:</label>
-                    <input type="text" id="emailNombreSitio" name="emailNombreSitio" placeholder="Ej: mitienda, miempresa, etc" required>
-                </div>
-                <div class="form-group">
-                    <label for="emailMensaje">Mensaje (Opcional):</label>
-                    <textarea id="emailMensaje" name="emailMensaje" rows="4" placeholder="Agregue detalles adicionales si lo desea"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar Email</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
+                    <h2 class="visually-hidden">Información de Contacto</h2>
                     <img src="images/CreaWeb chile.png" alt="Crea Web Chile" class="footer-logo">
                     <p>Diseño web profesional para impulsar tu negocio al siguiente nivel</p>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contacto</h4>
+                    <h3>Contacto</h3>
                     <p><i class="fab fa-whatsapp"></i> WhatsApp: +56 9 66083139</p>
                     <p><i class="fas fa-envelope"></i> Email: chilecreaweb@gmail.com</p>
                     <p><i class="fas fa-clock"></i> Horario: Lunes a Viernes 9:00 - 18:00</p>
@@ -814,6 +801,51 @@
         </div>
     </footer>
 
+    <!-- Modal de Cotización -->
+    <div id="cotizacionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Solicitar Cotización</h2>
+            <form id="cotizacionForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="plan">Seleccione su Plan:</label>
+                    <select id="plan" name="plan" required>
+                        <option value="Plan Básico">Plan Básico - $15.000 (IVA incluido)</option>
+                        <option value="Plan Profesional">Plan Profesional - $35.000 (IVA incluido)</option>
+                        <option value="Plan Premium">Plan Premium - $70.000 (IVA incluido)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dominio">Tipo de Dominio:</label>
+                    <select id="dominio" name="dominio" required>
+                        <option value=".com">.com - Comercial Internacional</option>
+                        <option value=".cl">.cl - Chile</option>
+                        <option value=".net">.net - Network</option>
+                        <option value=".org">.org - Organización</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nombreSitio">Nombre para su Sitio Web:</label>
+                    <input type="text" id="nombreSitio" name="nombreSitio" 
+                           placeholder="Ejemplo: mitienda, miempresa, etc" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (Opcional):</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar Cotización</button>
+            </form>
+        </div>
+    </div>
     <!-- Scripts -->
     <script src="js/scripts.js"></script>
 </body>
