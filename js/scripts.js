@@ -79,8 +79,8 @@ document.querySelectorAll('.faq-question').forEach(question => {
 
 // Funcionalidad del Modal de Cotización
 const modal = document.getElementById('cotizacionModal');
-// Modificar el selector para capturar todos los botones de cotizar
-const cotizarBtns = document.querySelectorAll('.btn-outline, [href*="wa.me"]');
+// Modificar el selector para excluir los botones del portafolio
+const cotizarBtns = document.querySelectorAll('.price-card .btn-outline, [href*="wa.me"]');
 const closeBtn = document.querySelector('.close-modal');
 const form = document.getElementById('cotizacionForm');
 
@@ -121,25 +121,43 @@ window.addEventListener('click', (e) => {
     }
 });
 
-// Manejar envío del formulario
+// Manejar envío del formulario con formato mejorado
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    const nombre = document.getElementById('nombre').value;
+    const nombre = document.getElementById('nombre').value.trim();
     const plan = document.getElementById('plan').value;
     const dominio = document.getElementById('dominio').value;
-    const nombreSitio = document.getElementById('nombreSitio').value;
-    const mensaje = document.getElementById('mensaje').value;
+    const nombreSitio = document.getElementById('nombreSitio').value.trim();
+    const mensaje = document.getElementById('mensaje').value.trim();
+
+    // Validación básica
+    if (!nombre || !nombreSitio) {
+        alert('Por favor, complete todos los campos requeridos');
+        return;
+    }
+
+    // Formato mejorado del mensaje
+    const text = 
+`¡Hola! Me interesa una cotización para mi sitio web.
+
+*Información del Cliente*
+━━━━━━━━━━━━━━━━━━━━━
+👤 *Nombre:* ${nombre}
+🎯 *Plan Seleccionado:* ${plan}
+🌐 *Dominio Deseado:* ${nombreSitio}${dominio}
+
+${mensaje ? `*Mensaje Adicional:*
+━━━━━━━━━━━━━━━━━━━━━
+${mensaje}
+
+` : ''}¡Gracias por su atención! Espero su respuesta.`;
+
+    // Codificar el mensaje para URL
+    const encodedText = encodeURIComponent(text);
     
-    // Construir mensaje para WhatsApp
-    const text = `¡Hola! Me interesa una cotización.%0A%0A` +
-                `Nombre: ${nombre}%0A` +
-                `Plan: ${plan}%0A` +
-                `Dominio: ${nombreSitio}${dominio}%0A` +
-                `${mensaje ? `Mensaje adicional: ${mensaje}%0A` : ''}`;
-    
-    // Redirigir a WhatsApp
-    window.location.href = `https://wa.me/56966083139?text=${text}`;
+    // Redireccionar a WhatsApp
+    window.location.href = `https://wa.me/56966083139?text=${encodedText}`;
 });
 
 // Modal de Email
