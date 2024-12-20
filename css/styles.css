@@ -2529,3 +2529,170 @@ section h2 {
 }
 
 /* ...existing code... */
+
+/* Estilos específicos para la pregunta de páginas ocultas */
+.faq-details ul li small {
+    display: block;
+    margin-left: 1.75rem;
+    margin-top: 0.25rem;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.faq-details ul li strong {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    color: var(--text);
+}
+
+/* Ajustes responsive para las páginas ocultas FAQ */
+@media (max-width: 768px) {
+    .faq-details ul li {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .faq-details ul li:last-child {
+        border-bottom: none;
+    }
+
+    .faq-details ul li i {
+        font-size: 1.2rem;
+        margin-top: 0.2rem;
+    }
+
+    .faq-details ul li strong {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+        color: var(--primary);
+    }
+
+    .faq-details ul li small {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        padding-left: 1.75rem;
+        font-size: 0.9rem;
+        display: block;
+        color: var(--text-light);
+    }
+
+    /* Mejorar espaciado entre secciones */
+    .faq-details h4 {
+        margin: 2rem 0 1rem;
+        font-size: 1.2rem;
+        color: var(--text);
+        border-bottom: 2px solid var(--primary);
+        padding-bottom: 0.5rem;
+    }
+
+    .faq-details h4:first-child {
+        margin-top: 1rem;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 360px) {
+    .faq-details ul li strong {
+        font-size: 1rem;
+    }
+
+    .faq-details ul li small {
+        font-size: 0.85rem;
+        padding-left: 1.5rem;
+    }
+}
+
+/* ...existing code... */
+
+/* ...existing code... */
+
+/* Estilos específicos para la pregunta de páginas ocultas con QR */
+.faq-details ul li {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.faq-details ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.faq-details ul li strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.faq-details ul li small {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+/* Ajustes específicos para móvil */
+@media (max-width: 768px) {
+    .faq-details {
+        padding: 1rem;
+    }
+
+    .faq-details h4 {
+        font-size: 1.1rem;
+        margin: 1.5rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--primary);
+    }
+
+    .faq-details ul li {
+        background: var(--background);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        box-shadow: var(--shadow);
+    }
+
+    .faq-details ul li i {
+        font-size: 1.1rem;
+    }
+
+    .faq-details ul li strong {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .faq-details ul li small {
+        font-size: 0.85rem;
+        padding-left: 1rem;
+        margin-top: 0.25rem;
+    }
+
+    /* Asegurar que los iconos se mantengan alineados */
+    .faq-details ul li i.fas {
+        margin-top: 0.2rem;
+        min-width: 20px;
+    }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media (max-width: 360px) {
+    .faq-details ul li {
+        padding: 0.75rem;
+    }
+
+    .faq-details ul li strong {
+        font-size: 0.95rem;
+    }
+
+    .faq-details ul li small {
+        font-size: 0.8rem;
+        padding-left: 0.75rem;
+    }
+}
+
+/* ...existing code... */
